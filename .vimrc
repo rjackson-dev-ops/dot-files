@@ -32,11 +32,10 @@ set wildmode=list:longest,full
 runtime macros/matchit.vim        " use % to jump between start/end of methods
 
 " put git status, column/row number, total lines, and percentage in status
-set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+set statusline=%F%m%r%h%w\ [%l,%c]\ [%L,%p%%]
 
 " set dark background and color scheme
 set background=dark
-colorscheme base16-railscasts
 
 " set up some custom colors
 highlight clear SignColumn
