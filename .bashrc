@@ -114,3 +114,5 @@ if ! shopt -oq posix; then
 fi
 export rvmsudo_secure_path=1
 export rvmsudo_secure_path=1
+
+set -o vi
