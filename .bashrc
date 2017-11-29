@@ -115,4 +115,6 @@ fi
 export rvmsudo_secure_path=1
 export rvmsudo_secure_path=1
 
+export PATH=~/.scripts:$PATH
+
 set -o vi

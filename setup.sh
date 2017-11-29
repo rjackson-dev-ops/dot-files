@@ -7,3 +7,5 @@ cp .vimrc ~
 cp -R .vim ~
 git config --global push.default current
 chmod 400 ~/.ssh/id*
+mkdir ~/scripts
+cp ./script/tmux-seesion ~/scripts
