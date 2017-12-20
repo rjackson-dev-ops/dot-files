@@ -41,7 +41,7 @@ set background=dark
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
 highlight ColorColumn  ctermbg=237
-highlight LineNr       ctermbg=236 ctermfg=240
+highlight LineNr       ctermbg=236 ctermfg=125
 highlight CursorLineNr ctermbg=236 ctermfg=240
 highlight CursorLine   ctermbg=236
 highlight StatusLineNC ctermbg=238 ctermfg=0
@@ -214,3 +214,4 @@ endfunction
 " run test runner
 map <leader>t :call RunTestFile()<cr>
 map <leader>T :call RunNearestTest()<cr>
+au BufNewFile,BufRead Jenkinsfile setf groovy
