@@ -123,6 +123,7 @@ rvm user gemsets
 rvm default 2.3.5
 rvm use ruby-2.3.5
 export AWS_REGION=us-west-2
+export AWS_DEFAULT_REGION=us-west-2
 export region=us-west-2
 which bundler || gem install bundler aws-sdk activesupport keystore hamburgerstore
 set -o vi
