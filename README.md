@@ -1,16 +1,16 @@
-![](https://raw.githubusercontent.com/chrishunt/dot-files/master/.screenshot.jpg)
+
 
 ## Installation
 
 ```bash
 $ cd ~
-$ git clone https://github.com/chrishunt/dot-files.git .
+$ git clone git@github.com:rjackson-dev-ops/dot-files.git .
 $ ./script/setup
 ```
 
-## Updating
+## Roberts Setup
 
 ```bash
 $ cd ~
-$ ./script/setup
+$ ./setup
 ```
