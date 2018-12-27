@@ -120,10 +120,11 @@ export PATH=~/.scripts:$PATH
 cd /;cd ~/
 
 rvm user gemsets
-rvm default 2.3.5
-rvm use ruby-2.3.5
-export AWS_REGION=us-west-2
-export AWS_DEFAULT_REGION=us-west-2
-export region=us-west-2
+rvm default 2.4.1
+rvm use ruby-2.4.1
+export AWS_REGION=us-east-1
+export AWS_DEFAULT_REGION=us-east-1
+export region=us-east-1
 which bundler || gem install bundler aws-sdk activesupport keystore hamburgerstore
 set -o vi
+export PATH=$PATH:~/projects/groundhog_day/
