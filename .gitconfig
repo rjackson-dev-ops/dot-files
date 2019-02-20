@@ -1,5 +1,5 @@
 [user]
-	email = robert.r.jackson@uscis.dhs.gov
+	email = robert.jackson@stelligent.com
 	name = rrjackso
 [core]
 	excludesfile = /home/ubuntu/.gitignore

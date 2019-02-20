@@ -8,4 +8,3 @@ cp -R .vim ~
 cp -R .ssh ~
 git config --global push.default current
 mkdir ~/scripts
-cp ./script/tmux-session ~/scripts

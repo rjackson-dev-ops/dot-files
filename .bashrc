@@ -112,19 +112,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export rvmsudo_secure_path=1
-export rvmsudo_secure_path=1
 
-export PATH=~/.scripts:$PATH
+export PATH=~/.scripts:~/projects/groundhog_day/:$PATH
 
 cd /;cd ~/
 
-rvm user gemsets
-rvm default 2.4.1
-rvm use ruby-2.4.1
 export AWS_REGION=us-east-1
 export AWS_DEFAULT_REGION=us-east-1
 export region=us-east-1
-which bundler || gem install bundler aws-sdk activesupport keystore hamburgerstore
+which bundler || gem install bundler aws-sdk activesupport keystore hamburgerstore crossing
 set -o vi
-export PATH=$PATH:~/projects/groundhog_day/
