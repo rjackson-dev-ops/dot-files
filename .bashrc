@@ -113,12 +113,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=~/.scripts:~/projects/groundhog_day/:$PATH
+export PATH=~/scripts:$PATH
 
 cd /;cd ~/
 
 export AWS_REGION=us-east-1
 export AWS_DEFAULT_REGION=us-east-1
 export region=us-east-1
-which bundler || gem install bundler aws-sdk activesupport keystore hamburgerstore crossing
 set -o vi
