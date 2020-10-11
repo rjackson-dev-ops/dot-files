@@ -1,5 +1,5 @@
 [user]
 	email = robert.jackson@stelligent.com
-	name = rrjackso
+	name = 'Robert Jackson'
 [core]
-	excludesfile = /home/ubuntu/.gitignore
+	excludesfile = ~/.gitignore_global

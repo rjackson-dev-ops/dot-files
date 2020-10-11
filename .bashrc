@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -84,6 +84,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -113,11 +116,43 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export PATH=$PATH:$HOME/.local/bin
 export PATH=~/scripts:$PATH
 
-cd /;cd ~/
-
-export AWS_REGION=us-east-1
-export AWS_DEFAULT_REGION=us-east-1
-export region=us-east-1
 set -o vi
+export EDITOR="$VISUAL"
+export VISUAL=vim
+export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+
+[ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
+
+# export AWS_REGION=us-east-1
+# export AWS_DEFAULT_REGION=us-east-1
+# export region=us-east-1
+# export AWS_DEFAULT_PROFILE=rjackson-working-account-10
+
+# export AWS_VAULT_BACKEND="pass"
+# export AWS_VAULT_PASS_PASSWORD_STORE_DIR=/home/rjackson/.password-store
+
+# export PATH="/home/rjackson/.pyenv/bin:$PATH"
+# export PATH="$HOME/.poetry/bin:$PATH"
+# export GOPATH=$HOME/go
+# export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+# alias gcpm='make -f ~/scripts/gcloud.Makefile'
+# alias awsm='make -f ~/scripts/aws.Makefile'
+# Added by serverless binary installer
+# export PATH="$HOME/.serverless/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# export SDKMAN_DIR="/home/rjackson/.sdkman"
+# [[ -s "/home/rjackson/.sdkman/bin/sdkman-init.sh" ]] && source "/home/rjackson/.sdkman/bin/sdkman-init.sh"
